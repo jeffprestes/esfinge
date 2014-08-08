@@ -1,23 +1,6 @@
 <?php
-/*
-require_once 'lib/PPConfigManager.php';
-require_once 'lib/common/PPApiContext.php';
-require_once 'lib/common/PPReflectionUtil.php';
-require_once 'lib/common/PPArrayUtil.php';
-require_once 'lib/common/PPModel.php';
-require_once 'lib/PPLoggingManager.php';
-require_once 'lib/exceptions/PPConnectionException.php';
-require_once 'lib/PPHttpConfig.php';
-require_once 'lib/PPHttpConnection.php';
-require_once 'lib/PPConstants.php';
-require_once 'lib/common/PPUserAgent.php';
-require_once 'lib/transport/PPRestCall.php';
-require_once 'lib/handlers/IPPHandler.php';
-require_once 'lib/handlers/PPOpenIdHandler.php';
-require_once 'lib/auth/openid/PPOpenIdTokeninfo.php';
-require_once 'lib/auth/openid/PPOpenIdAddress.php';
-require_once 'lib/auth/openid/PPOpenIdUserinfo.php';
-*/
+session_start();
+
 require_once 'vendor/autoload.php';
 
 $apicontext = new PPApiContext(array('mode' => 'sandbox'));
@@ -42,7 +25,9 @@ $params = array('access_token' => $token->access_token);
 
 $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
 
-print_r($user);
-
-var_dump($user);
-
+$_SESSION["usuario"] = $user;
+?>
+<script>
+    window.parent.location = 'resultado.php';
+    window.close();
+</script>
