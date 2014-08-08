@@ -17,10 +17,6 @@ try {
     echo '<pre>';print_r(json_decode($pce->getData()));exit;
 }
 
-//print_r($token);
-//echo "<hr>" . $token->{'access_token'};
-//echo "<hr>" . $token->access_token;
-
 $params = array('access_token' => $token->access_token);
 
 $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
@@ -30,6 +26,6 @@ var_dump($user);
 $_SESSION["usuario"] = $user;
 ?>
 <script>
-    window.parent.location.href = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
+    window.parent.location = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
     //window.close();
 </script>
