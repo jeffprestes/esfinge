@@ -28,6 +28,6 @@ $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
 $_SESSION["usuario"] = $user;
 ?>
 <script>
-    window.top.location.href = '/resultado.php';
+    window.top.location.href = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
     window.close();
 </script>
