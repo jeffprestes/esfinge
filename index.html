@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+    <head>
+        <title>Login com PayPal - Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body    {
+                margin: 0;
+                padding: 0;
+            }
+            
+            #divImagem, #divLoginPayPal, #titulo {
+                text-align:center;
+            }
+            
+            #titulo {
+                font-family: sans-serif;
+                font-size: x-large;
+                font-weight: bolder;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="titulo">Logue-se ou devoro-te</div>
+        <div id="divImagem"><img src="images/esfinge.jpg" id="image" /></div>
+        <div id="divLoginPayPal">
+            <span id="spanLoginPayPal"></span>
+                <script src="https://www.paypalobjects.com/js/external/api.js"></script>
+                <script>
+                paypal.use( ["login"], function(login) {
+                  login.render ({
+                    "appid": "AZcMTxD6dnqzG_1dugMHqjhhL8fQVUZ-YY11ZyU_MS8f5eltTZGoSskwUToB",
+                    "authend": "sandbox",
+                    "scopes": "profile email address phone https://uri.paypal.com/services/paypalattributes",
+                    "containerid": "spanLoginPayPal",
+                    "locale": "pt-br",
+                    "returnurl": "https://ppbrasil1.websiteseguro.com/jeff/esfinge/retorno.php"
+                  });
+                });
+                </script>
+        </div>
+    </body>
+</html>
