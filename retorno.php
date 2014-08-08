@@ -1,5 +1,5 @@
 <?php
-
+/*
 require_once 'lib/PPConfigManager.php';
 require_once 'lib/common/PPApiContext.php';
 require_once 'lib/common/PPReflectionUtil.php';
@@ -17,7 +17,8 @@ require_once 'lib/handlers/PPOpenIdHandler.php';
 require_once 'lib/auth/openid/PPOpenIdTokeninfo.php';
 require_once 'lib/auth/openid/PPOpenIdAddress.php';
 require_once 'lib/auth/openid/PPOpenIdUserinfo.php';
-
+*/
+require_once 'vendor/autoload.php';
 
 $apicontext = new PPApiContext(array('mode' => 'sandbox'));
 $params = array(
