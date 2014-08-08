@@ -2,7 +2,7 @@
 /**
  * End-User's preferred address.
  */
-class PPOpenIdAddress extends \PayPal\common\PPModel {
+class PPOpenIdAddress extends PPModel {
 
 		/**
 		 * Full street address component, which may include house number, street name.
