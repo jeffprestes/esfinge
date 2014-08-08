@@ -1,5 +1,4 @@
 <?php 
-namespace PayPal\common;
 
 /**
  * Generic Model class that all API domain classes extend

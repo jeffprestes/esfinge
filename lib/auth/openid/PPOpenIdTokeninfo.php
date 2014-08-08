@@ -1,10 +1,9 @@
 <?php
-namespace PayPal\Auth\Openid;
 
 /**
  * Token grant resource
  */
-class PPOpenIdTokeninfo extends \PayPal\common\PPModel {
+class PPOpenIdTokeninfo extends PPModel {
 
 		/**
 		 * OPTIONAL, if identical to the scope requested by the client; otherwise, REQUIRED.
