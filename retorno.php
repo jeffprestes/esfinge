@@ -18,7 +18,8 @@ require_once 'lib/auth/openid/PPOpenIdTokeninfo.php';
 require_once 'lib/auth/openid/PPOpenIdAddress.php';
 require_once 'lib/auth/openid/PPOpenIdUserinfo.php';
 
-
+phpinfo();
+exit;
 
 $apicontext = new PPApiContext(array('mode' => 'sandbox'));
 $params = array(
@@ -40,7 +41,7 @@ try {
 
 $params = array('access_token' => $token->access_token);
 
-    $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
+$user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
 
 print_r($user);
 
