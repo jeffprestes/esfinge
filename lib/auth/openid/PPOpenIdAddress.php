@@ -3,7 +3,7 @@ namespace PayPal\Auth\Openid;
 /**
  * End-User's preferred address.
  */
-class PPOpenIdAddress extends PPModel {
+class PPOpenIdAddress extends \PayPal\common\PPModel {
 
 		/**
 		 * Full street address component, which may include house number, street name.
