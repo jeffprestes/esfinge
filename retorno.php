@@ -45,4 +45,4 @@ $params = array('access_token' => $token->access_token);
 print_r($user);
 
 var_dump($user);
-*/
+
