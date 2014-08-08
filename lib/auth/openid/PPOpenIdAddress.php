@@ -1,5 +1,5 @@
 <?php 
-namespace PayPal\Auth\Openid\PPOpenIdAddress;
+namespace PayPal\Auth\Openid;
 /**
  * End-User's preferred address.
  */
