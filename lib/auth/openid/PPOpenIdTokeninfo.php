@@ -1,4 +1,5 @@
 <?php
+namespace PayPal\Auth\Openid;
 
 /**
  * Token grant resource
