@@ -18,8 +18,6 @@ require_once 'lib/auth/openid/PPOpenIdTokeninfo.php';
 require_once 'lib/auth/openid/PPOpenIdAddress.php';
 require_once 'lib/auth/openid/PPOpenIdUserinfo.php';
 
-phpinfo();
-exit;
 
 $apicontext = new PPApiContext(array('mode' => 'sandbox'));
 $params = array(
