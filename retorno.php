@@ -25,9 +25,11 @@ $params = array('access_token' => $token->access_token);
 
 $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
 
+var_dump($user);
+
 $_SESSION["usuario"] = $user;
 ?>
 <script>
     window.parent.location.href = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
-    window.close();
+    //window.close();
 </script>
