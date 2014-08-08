@@ -28,6 +28,6 @@ $user = PPOpenIdUserinfo::getUserinfo($params,$apicontext);
 $_SESSION["usuario"] = $user;
 ?>
 <script>
-    window.parent.location = 'resultado.php';
+    window.parent.location = '/resultado.php';
     window.close();
 </script>
