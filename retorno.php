@@ -26,6 +26,6 @@ var_dump($user);
 $_SESSION["usuario"] = $user;
 ?>
 <script>
-    window.parent.location = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
-    //window.close();
+    window.opener.parent.location = 'http://ppbrasil.jelasticlw.com.br/resultado.php';
+    window.close();
 </script>
